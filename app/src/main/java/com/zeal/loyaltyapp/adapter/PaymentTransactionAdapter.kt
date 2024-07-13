@@ -88,7 +88,7 @@ class PaymentTransactionAdapter(
         private fun updateTransactionInContentProvider(id: String, totalAmount: Double, discountedAmount: Double, cardNumber: String, time: String) {
             val values = ContentValues().apply {
                 put("id", id)
-                put("total", totalAmount.toString()) // Update total amount (if needed)
+                put("total", totalAmount.toString())
                 put("discountedAmount", discountedAmount.toString())
                 put("cardNumber", cardNumber)
                 put("time", time)
